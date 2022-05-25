@@ -1,0 +1,14 @@
+tasks:
+  - init: yarn install && yarn run build
+    command: yarn run dev
+
+ports:
+  - port: 8080
+    onOpen: open-browser
+
+vscode:
+  extensions:
+    - donjayamanne.githistory
+    - EditorConfig.EditorConfig
+    - esbenp.prettier-vscode
+    - octref.vetur
